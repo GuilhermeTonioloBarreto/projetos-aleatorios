@@ -5,109 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- bootstrap reference -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- css reference-->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- MathJAX API -->
-  <script SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-  <script>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</script>
+  
 
 </head>
-
 <body>
-<div class="container">
-  <h1>Investimentos de renda fixa</h1>
-
-  <!-- Cálculo de renda fixa -->
-  <h2>Cálculo de juros pré fixado para qualquer período</h2>
-
-  <p>Exemplo 1: Supondo que seja feito um investimento 
-    de R$ 1.000,00 em um título pré fixado, que rende 13,8% ao ano 
-    com o prazo de 185 dias, a iniciar no 
-    dia 29/08/2022 (finalizando assim no dia 02/03/2023). Deve-se calcular a 
-    rentabilidade do investimento em seu vencimento.
-    Sendo assim, as informações relevantes são:
-  </p>
-  <ul>
-    <li>Investimento inicial = R$ 1000,00</li>
-    <li>Taxa de juros ao ano = 13,8 %</li>
-    <li>Dias úteis que a aplicação irá render = 127 dias (entre os dias 29/08/2022 
-      e 02/03/2023 existem 185 dias. Contudo, em cálculos de 
-      renda fixa, o dinheiro só rende nos dias úteis)
-    </li>
-  </ul>
-
-  <h3>Passo 1: Calcular a rentabilidade por dia útil</h3>
-  <p>A fórmula de renda consiste em juros compostos. Assim:</p>
-
-  $$ m = c(1 + i_a)^{t_a}$$
-
-  <p>Sendo:</p>
-  <ul>
-    <li>m = Investimento final</li>
-    <li>c = Investimento inicial</li>
-    <li>i<sub>a</sub> = taxa de juros ao ano</li>
-    <li>t<sub>a</sub> = dias úteis que o investimento inicial 
-      estará rendendo ao ano (252 dias)
-    </li>
-  </ul>
-
-  <p>Para calcular a rentabilidade por dia útil, devemos isolar o valor 
-    da taxa de juros e substituir os valores, considerando que o dinheiro 
-    inicial rendeu por um ano. Assim:
-  </p>
-
-  $$ i_d = \left ({m \over c} \right)^{(1/t_a)} - 1$$
-
-  <p>Sendo:</p>
-  <ul>
-    <li>i<sub>d</sub> = taxa de juros que rende em um dia</li>
-    <li>c = investimento inicial. Para facilitar o cálculo, atribuiremos
-      seu valor igual a 1 é igual a 1
-    </li>
-    <li>m = investimento final. No nosso exemplo, ele tem que ser igual 
-      ao investimento inicial + a taxa de juros ao ano = 1 + 13,8% = 1,138
-    </li>
-    <li>t<sub>a</sub> = dias úteis de um ano que está rendendo o dinheiro = 
-    252 dias
-    </li>
-  </ul>
-
-  <p>Substituindo os valores:</p>
-
-  $$ i_d = 1,138^{(1/252)} - 1 = 0,0005131170586860634$$
-
-  <p>Ou seja, a taxa de juros que rende em um dia é de 0,05131%</p>
-
-  <h3>Passo 2: Calcular a rentabilidade do investimento</h3>
-
-  <p>Com a taxa de juros que rende em um dia, é possível aplicar a fórmula dos 
-    juros compostos para calcular a rentabilidade do investimento em termos do
-    número de dias úteis. Assim:
-  </p>
-
-  <ul>
-    <li>c = 1000 reais</li>
-    <li>i<sub>d</sub> = 0,05131%</li>
-    <li>t = 127 dias úteis</li>
-  </ul>
-  $$ m = c(1 + i_a)^{t} = 1000(1 + 0,0005131)^{127}$$
-  
-  <p>m = 1067,31 reais</p>
-
-  <p>Assim, a rentabilidade do investimento (sem considerar descontos do IR) 
-    é de 67,31 reais
-  </p>
-
-
-</div>
-
-
-
-<script src="js/functions.js"></script>
+    <p>Projetos Aleatórios</p>
+    <ul>
+        <li>Explicação sobre investimentos: 
+            <a href="investimento/index.html">Clique aqui</a>
+        </li>
+        <li>Calculadora de inss e irrf descontado do salario: 
+            <a href="inss_iffr/calculo_inss_irrf.php">Clique aqui</a>
+        </li>
+    </ul>
 </body>
+
 </html>
